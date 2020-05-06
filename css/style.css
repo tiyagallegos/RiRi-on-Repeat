@@ -1,0 +1,39 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Marcellus SC', serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font: black;
+    background-color: black;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Marcellus SC', serif;
+}
+
+img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+audio {
+    background-color: red;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
