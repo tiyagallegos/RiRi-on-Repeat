@@ -1,17 +1,21 @@
 
-           /*
 
-const corsServer = "https://cors-anywhere.herokuapp.com/"
-const baseUrl = "https://trefle.io/api/plants/{id}";
-const token = "SnpPcEo0Zk92WUZLRTE4U0piY3BrUT09"
-const url = corsServer + baseUrl + "?token=" + token
-$.ajax({
-  url: url
-}).then(function(data){
-  console.log(data)
-});
+/*
+/*----- constants -----*/
+const baseUrl = "https://deezerdevs-deezer.p.rapidapi.com/search?q=rihanna"
+const matchedSong = 
+/*----- app's state (variables) -----*/
+let songData, userInput;
 
-*/
+/*----- cached element references -----*/
+
+
+
+/*----- event listeners -----*/
+
+
+
+/*----- functions -----*/
 var settings = {
 	"async": true,
 	"crossDomain": true,
@@ -23,89 +27,32 @@ var settings = {
 	}
 }
 
-$.ajax(settings).done(function (response) {
-	console.log(response);
+$.ajax(settings).done(function(response) {
+	const matchedSong = response.data.filter(song => song.title === userInput)
+
+	if
 });
 
-/*
-/*----- constants -----*/
-/*----- app's state (variables) -----*/
-let songData, userInput;
+     
+$.ajax({
+    url: baseUrl
+}).then(function(data) {
+    console.log(data)
+}, function(error) {
+    console.log(error)
+});
 
-/*----- cached element references -----*/
-//using $ to tell people I'm using jquery 
-//how to select elements in the dom using jquery
-//STOPPP make sure you selected elements correctly
-//jquery will always return object
-const $releaseYearEl = $('#year');
+// step 1 filter through response data and make sure user input matches song title. 
+// 2. set new var = the matchedSong [0]
+//3. use elemnts to add in text in HTML  with the . stuff jquery to reduce errors
+///4. .css for styling for the cover
+//5 .attr for song preview
+//6. use audio to init loading
+//TRACKLIST ISSUE
+//7 tracklist issue: CORS need to send another API requst through proxy server to access playlist object
+//once accessed playlist filter to list traks into an empty array and make it a list
+//append data 
+//else if cannot fetch list, return cannot fetch tracklist *make track list hidden w/hover .onmousehover
 
-const $albumTitle = $('#album_title');
-
-const $year = $('#year');
-
-const $rating = $('#rate');
-
-const $input = $('input[type="text"]')
-
-const $coverImg = $('#cover-img');
-
-const $trackList = $('#trackList');
-//how to access and push into html array?
-
-const $songPrev = $('#song-prev');
-//grab the input that has a type = text, CSS, JS or Jquery
-//to get value from input tag
-
-/*----- event listeners -----*/
-$('form').on('submit', handleGetData)
-//wrapped in $$ so we can attach and event listeener
-//access an element suing jquery, then **.on= how to add event 
-//listener using jquery, lisenteing for submit type of event
-
-
-/*----- functions -----*/
-
-init ();
-
-function init() {
-    $yearEl.html(new Date().getFullYear());
-    //check for time embedded function
-    //complaints = [];
-    //initialize complaints to an empty array 
-}
-
-function handleGetData(event) {
-    event.preventDefault();//prevents the default behavior of form submission
-    if($input.val() === "") return; //No data don't run checking to make sure u enter text
-
-    userInput = $input.val();
-   $input.val(""); //clear the input
-    //assignning userinput to input value connecting with the dom
-    //will give the value user gives in input tag
-    $.ajax({
-        url:'https://deezerdevs-deezer.p.rapidapi.com/search?q=rihanna' + userInput
-    }).then(function(data) {
-        movieData = data;
-        //no have global accesslet movieData is the global managemetn in the stat variable
-        render();
-    }, function(error) {
-        console.log(error)  
-    });
-}
-
-function render() {
-    $title.html(movieData.Title);
-    $year.html(movieData.Year);
-    $rating.html(movieData.Rated);
-} 
-//let movieData is the global managemetn in the stat variable
-
-//re-factoring=making it fit a certain spec
-//this code will only execute when this function gets called
-//usually have to change some variable names after refactioring. 
-
-
-//making dynamic ajax requests
-//whenever browser sees a form,the form will tell browser to refresh the page
-//defeats purpose of AJAX don't need to refresh the page so turn off default 
-//behavior of the form
+//6.1 else log an error unknkown song
+//*current issue: fetching tracklist
