@@ -10,25 +10,31 @@ body {
     display: flex;
     flex-direction: column;
     font: black;
-    background-color: black;
+    background-color:black;
 }
 
-header {
+h1 {
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Marcellus SC', serif;
+    color: whitesmoke;
+}
+
+div {
+    color: whitesmoke;
 }
 
 img {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    flex-grow: 1;
 }
 
 audio {
     background-color: black;
+    flex-grow: 1;
 }
 
 
@@ -36,4 +42,19 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.query {
+    color: whitesmoke;
+}
+
+input[type=text] {
+    color: whitesmoke;
+    font-family: 'Marcellus SC', serif;
+}
+
+input {
+    color: whitesmoke;
+    font-family: 'Marcellus SC', serif;
+    background-color: black;
 }
