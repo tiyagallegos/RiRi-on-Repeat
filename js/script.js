@@ -29,7 +29,7 @@ function settings(url) {
 	"headers": {
 		"x-rapidapi-host": "deezerdevs-deezer.p.rapidapi.com",
 		"x-rapidapi-key": "e757fe4fb0mshf47696722c0aac2p11e08ejsnd4888a112874"
-	}
+	} 
 }
 	}
 
