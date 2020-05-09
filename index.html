@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>RiRi on Repeat</title>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script defer src="./js/script.js"></script>
@@ -13,29 +14,44 @@
 <body>
     <h1>RiRi on Repeat</h1>
     
+
+    <div class="dropdown">
+        <button class="dropbtn">☰</button>
+        <div class="dropdown-content">
+          <a href="#">FENTY BEAUTY</a>
+          <a href="#">SAVAGEXFENTY</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+
+
     <section id="specs">
+        <form>
+            <input type="text" placeholder="Song Name">
+            
+                <div class="container">
+                <input type="submit" class="image">
+                </div>
+         
+        </form>
         <div id="song-name">SONG NAME</div>
         <div id="album-title">ALBUM TITLE</div>
         <div id="rating">EXPLICIT LYRICS</div>
         <div id="tracklist">TRACKLIST</div>
-        <div id="song-name">EXTRAS</div>
+        <div id="extras">EXTRAS</div>
     </section>    
+    
+        <div id="album-cover">
+        <img src="https://creators-images.vice.com/content-images/contentimage/no-slug/6dfffae3976db43e97229509d0979a7d.jpg" alt="Rihanna Album Image" alt="">
+        </div>
 
-    <div id="album-cover"></div>
-
-    <form id="query">
-        <input type="text" placeholder="Song Name">
-        <input type="submit" value="Get Specs">
-    </form>
-
-    <audio controls id="audio">
+        <audio controls id="audio">
         <source src="preview" type="audio/mpeg">
-      Your browser does not support the audio element.
-      </audio>
-  
+        Your browser does not support the audio element.
+        </audio>
+
       <footer class="page-footer black">
-        <p>Copyright &copy; <span id='year'></span></p>
+        <p>Copyright &copy; <span id='year'>2020</span></p>
     </footer>
 </body>
 </html>
-
