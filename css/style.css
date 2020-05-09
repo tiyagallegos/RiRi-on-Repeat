@@ -46,6 +46,7 @@ footer {
 
 .query {
     color: whitesmoke;
+    background-color: black;
 }
 
 input[type=text] {

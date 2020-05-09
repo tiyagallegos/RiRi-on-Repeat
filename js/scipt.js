@@ -13,36 +13,51 @@ let songData, userInput;
 
 /*----- event listeners -----*/
 
-
+$controls.on('click', "form", handleGetData);
 
 /*----- functions -----*/
-var settings = {
+function settings(url) {
+	return{
 	"async": true,
 	"crossDomain": true,
-	"url": "https://deezerdevs-deezer.p.rapidapi.com/search?q=rihanna",
+	"url": url,
 	"method": "GET",
 	"headers": {
 		"x-rapidapi-host": "deezerdevs-deezer.p.rapidapi.com",
 		"x-rapidapi-key": "e757fe4fb0mshf47696722c0aac2p11e08ejsnd4888a112874"
 	}
 }
-
-$.ajax(settings).done(function(response) {
-	const matchedSong = response.data.filter(song => song.title === userInput)
-
-	if (matchedSong.length !=0) {
-		console.log(matchedSong)
 	}
-});
+
+	$.ajax(settings(baseUrl)).done(function(response) {
+		const matchedSong = response.data.filter(song => song.title === userInput)
+	
+		if (matchedSong.length != 0) {
+			console.log(matchedSong)
+	
+			const song = matchedSong[0]
+	
+			$("#song-name").text(userInput)
+			$("#album-title").text(song.album.title)
+	
+			const rating = song.explicit_lyrics ? "Yes" : "No"
+			$("#rating").text(rating)
+	
+			$("#album-cover").css("backgroundImage", 'url(' + song.album.cover +')')
+	
+			$("#preview").attr("src", song.preview)
+			$("#audio")[0].load()
+	
+			loadTrackList(song.album.id)
+		} else {
+			console.log("Unknown song: " + userInput)
+		}
+	});
+
+
 
      
-$.ajax({
-    url: baseUrl
-}).then(function(data) {
-    console.log(data)
-}, function(error) {
-    console.log(error)
-});
+
 
 // step 1 filter through response data and make sure user input matches song title. 
 // 2. set new var = the matchedSong [0]
