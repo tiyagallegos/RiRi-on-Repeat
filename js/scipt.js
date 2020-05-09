@@ -30,7 +30,9 @@ var settings = {
 $.ajax(settings).done(function(response) {
 	const matchedSong = response.data.filter(song => song.title === userInput)
 
-	if
+	if (matchedSong.length !=0) {
+		console.log(matchedSong)
+	}
 });
 
      
