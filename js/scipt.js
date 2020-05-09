@@ -3,7 +3,7 @@
 /*
 /*----- constants -----*/
 const baseUrl = "https://deezerdevs-deezer.p.rapidapi.com/search?q=rihanna"
-const matchedSong = 
+
 /*----- app's state (variables) -----*/
 let songData, userInput;
 

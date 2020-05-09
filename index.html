@@ -12,25 +12,25 @@
 </head>
 <body>
     <h1>RiRi on Repeat</h1>
-    <img src="https://creators-images.vice.com/content-images/contentimage/no-slug/6dfffae3976db43e97229509d0979a7d.jpg" alt="Rihanna Album Image">
-    <dl>
-        <dt>Album Title:</dt>
-        <dd id="album"></dd>
-        <dt>Release Year:</dt>
-        <dd id="year"></dd>
-        <dt>Songs:</dt>
-        <dd id="songs"></dd>
-    </dl>
+    
+    <section id="specs">
+        <div id="song-name">SONG NAME</div>
+        <div id="album-title">ALBUM TITLE</div>
+        <div id="rating">EXPLICIT LYRICS</div>
+        <div id="tracklist">TRACKLIST</div>
+        <div id="song-name">EXTRAS</div>
+    </section>    
+
+    <div id="album-cover"></div>
+
     <form>
-        <input type="text" placeholder="Music Artist">
-        <input type="submit" value="🎙️Get Music">
+        <input type="text" placeholder="Song Name">
+        <input type="submit" value="Get Specs">
     </form>
-    <audio controls>
-        <source src="https://cdns-preview-c.dzcdn.net/stream/c-c3135df9d27931726c4a003a27e8773e-6.mp3" type="audio/mpeg">
+    <audio controls id="audio">
+        <source src="preview" type="audio/mpeg">
       Your browser does not support the audio element.
       </audio>
-      <a class="waves-effect waves-light btn white"><i class="material-icons left"></i>button</a>
-   
   
       <footer class="page-footer black">
         <p>Copyright &copy; <span id='year'></span></p>
