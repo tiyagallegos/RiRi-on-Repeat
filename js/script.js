@@ -79,7 +79,8 @@ function getSongData() {
 			console.debug(song.album)
 				loadTrackList(song.album.id)
 		} else {
-			console.log("Unknown song: " + userInput)
+			$songName.append("Unknown song: " + userInput)
+			
 		}
 	});
 }
@@ -111,7 +112,7 @@ jQuery.ajaxPrefilter(function(options) {
 					tracks.append(track)
 				}
 			} else {
-				console.log("Could not fetch track list")
+				//tracks.text("Could not fetch track list") do I use text or append here?
 			}
 		 })
 		}
@@ -122,7 +123,7 @@ jQuery.ajaxPrefilter(function(options) {
 	//3. Search closest match 
 //4. Pull song not recognized into the console by song name
 //5. Add a keylistner to init when enter is hit too find code on google
-
+//6. line 114 ask to use init or append to get to show in browser?? through the code text vs append....? 
 
 
 
