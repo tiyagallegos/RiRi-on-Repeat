@@ -3,13 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/animate.min.css" rel="stylesheet">
-    <link href="css/bootstrap-dropdownhover.min.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
     <title>RiRi on Repeat</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap-dropdownhover.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script defer src="./js/script.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Marcellus+SC&display=swap" rel="stylesheet">
@@ -30,27 +25,31 @@
     </div>
 
     <section id="specs">
-        <form>
-            <input type="text" placeholder="Song Name">
-            
-                <div class="container">
-                <input type="submit" class="image">
-                </div>
-         
-        </form>
-        <div id="song-name">SONG NAME</div>
-        <div id="album-title">ALBUM TITLE</div>
-        <div id="rating">EXPLICIT LYRICS</div>
-        <div id="tracklist">TRACKLIST</div>
+
+            <input id="user-input" type="text" placeholder="Song Name">
+            <button id="songSpecsButton" type="button">Get Song Specs</button>
+        <dl>
+            <dt>SONG NAME</dt>
+            <dd id="song-name"></dd>
+
+            <dt> EXPLICIT LYRICS</dt>
+            <dd id="rating"></dd>
+
+            <dt>ALBUM TITLE</dt>
+            <dd id="album-title"></dd>
+
+            <dt>TRACKLIST</dt>
+            <dd id="tracklist"></dd>
+    </dl>
         
     </section>    
     
         <div id="album-cover">
-        <img src="https://creators-images.vice.com/content-images/contentimage/no-slug/6dfffae3976db43e97229509d0979a7d.jpg" alt="Rihanna Album Image" alt="">
+        <img src="#" alt="Rihanna Album Image" alt="">
         </div>
 
         <audio controls id="audio">
-        <source src="preview" type="audio/mpeg">
+        <source id="music" type="audio/mpeg">
         Your browser does not support the audio element.
         </audio>
 
