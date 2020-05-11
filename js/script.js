@@ -116,7 +116,14 @@ jQuery.ajaxPrefilter(function(options) {
 		 })
 		}
 
-     
+	 //*** things to finish MONDAY
+	 //1. Where to add .toUperCase()
+	//2.Is there a closest match jQuery function
+	//3. Search closest match 
+//4. Pull song not recognized into the console by song name
+//5. Add a keylistner to init when enter is hit too find code on google
+
+
 
 
 // step 1 filter through response data and make sure user input matches song title. 
