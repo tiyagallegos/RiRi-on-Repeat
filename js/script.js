@@ -20,20 +20,24 @@ const $button = $("#songSpecsButton")
 //console.debug($userInput)
 /*----- event listeners -----*/
 
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.dropdown-trigger');
-  });
+
+
+
 $button.click( function() {
 	 userInput = $userInput.val()
+	 $userInput.val("");
 	 getSongData()
 
+});
 
-})
-
-
-	// $button.click( function() {
-	//	userInput = $userInput.val()
-	//	getSongData()
+// help here
+$button.on("keydown", "#user-input", function(e) { 
+	let key = e.which;
+	if (key == 13) {
+			$button.click();
+			return false; 
+		}
+	});
    
 	//console.debug(userInput)
 	//add event listener for key handler listen in key handler for enter key
@@ -59,10 +63,11 @@ function settings(url) {
 function getSongData() {
 
 	$.ajax(settings(baseUrl)).done(function(response) {
+		//console.log(response.data)
 		const matchedSong = response.data.filter(song => song.title.toLowerCase() === userInput.toLowerCase())
-		
+		//console.log(matchedSong);
 		if (matchedSong.length != 0) {
-			console.log(matchedSong)
+			
 	
 			const song = matchedSong[0]
 	
@@ -79,13 +84,15 @@ function getSongData() {
 			console.debug(song.album)
 				loadTrackList(song.album.id)
 		} else {
-			$songName.append("Unknown song: " + userInput)
-			
+			$songName.html("Unknown song: " + userInput)
+			$albumTitle.html("cannot fetch")
+			$explicitLyrics.html("cannot fetch")
+			tracks.html 
 		}
 	});
 }
-
-
+//README add API issues 
+// change html d/t greater flex with html docs
 jQuery.ajaxPrefilter(function(options) {
     if (options.crossDomain && jQuery.support.cors) {
         options.url = 'https://cors-anywhere.herokuapp.com/' + options.url;
@@ -103,13 +110,14 @@ jQuery.ajaxPrefilter(function(options) {
 			// check if the response has tracks
 			if (data.length != 0) {
 				//  build a dropdown list
-				const tracks = $("#tracklist")
-				tracks.empty()
+				const $tracks = $("#tracklist")
+				$tracks.empty()
 	
 				// loop through the response tracks
 				for (let i=0; i < data.length; i++) {
-					const track = "<li>" + data[i].title + "</li>"
-					tracks.append(track)
+					const $track = "<li>" + data[i].title + "</li>"
+					$tracks.append($track)
+					
 				}
 			} else {
 				//tracks.text("Could not fetch track list") do I use text or append here?

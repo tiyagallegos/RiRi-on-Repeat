@@ -113,19 +113,23 @@ input {
   }
   
   /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: whitesmoke;}
+  .dropdown-content a:hover {background-color: black;}
   
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {display: block;}
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color:whitesmoke);}
+  .dropdown:hover .dropbtn {background-color:black);}
 
   dl {
       color: whitesmoke;
       display: inline;
   }
 
-   dt{ 
-      display: inline;
-  }
+   
+
+  #demotext {
+    color: rgba(255,255,255,.3);
+    background: #1a1a1a;
+    text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
+    }
