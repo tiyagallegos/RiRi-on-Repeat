@@ -71,11 +71,11 @@ function getSongData() {
 	
 			const song = matchedSong[0]
 	
-			$songName.text(userInput)
-			$albumTitle.text(song.album.title)
+			$songName.html(userInput)
+			$albumTitle.html(song.album.title)
 	
 			const rating = song.explicit_lyrics ? "Yes" : "No"
-			$explicitLyrics.text(rating)
+			$explicitLyrics.html(rating)
 	
 			$albumCover.css("backgroundImage", 'url(' + song.album.cover +')')
 	
