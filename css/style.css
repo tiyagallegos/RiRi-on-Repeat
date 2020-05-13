@@ -30,9 +30,15 @@ h1 {
 #specs {
     border-radius: 10px;
     text-align: left;
+    color: whitesmoke;
 
 }
-
+#songSpecsButton {
+    background: black;
+    font-family: 'Marcellus SC', serif;
+    color: whitesmoke;
+    border-radius: 10px solid whitesmoke;
+}
 
 div {
     color: whitesmoke;
@@ -56,11 +62,13 @@ footer {
    
 }
 #album-cover {
-    
     display: flex;
+    float: center;
     flex-grow: 1;
-    background-repeat: no-repeat
-    
+    background-repeat: no-repeat;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -76,7 +84,7 @@ input {
 }
 .image {
     display: block;
-    width: 100%;
+    width: auto;
     height: auto;
   }
   
@@ -130,7 +138,9 @@ a:hover, .dropdown:hover{
 }
 .dropdown:hover .dropdown-content{
     display: block;
+    background: #49505a;
+    
 }
 .dropdown-content, a:hover{
-    background: rgb(21, 21, 24);
+    background: #32323a;
 }
