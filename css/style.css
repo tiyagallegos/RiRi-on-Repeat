@@ -13,24 +13,25 @@ body {
     flex-direction: column;
     align-items: center;
     justify-items: center;
-    font: black;
-    
-}
-body {
+    font: whitesmoke;
     background:radial-gradient(rgb(77, 71, 71), black);
 }
+
 h1 {
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Marcellus SC', serif;
-    color: whitesmoke;
+    font-size: 500%;
+    
+   
 }
 
 #specs {
-    border-radius: 10px;
+    border-radius: 10px solid whitesmoke;
     text-align: left;
     color: whitesmoke;
+    padding: 10px;
 
 }
 #songSpecsButton {
@@ -38,6 +39,7 @@ h1 {
     font-family: 'Marcellus SC', serif;
     color: whitesmoke;
     border-radius: 10px solid whitesmoke;
+    padding: 10px;
 }
 
 div {
@@ -51,6 +53,7 @@ div {
     margin: 20px; 
     justify-content: center;
     align-items: center;  
+    
       
 }
 
@@ -63,12 +66,18 @@ footer {
 }
 #album-cover {
     display: flex;
-    float: center;
-    flex-grow: 1;
+    flex-direction: column;
+   
     background-repeat: no-repeat;
     width: 100%;
+    
     justify-content: center;
     align-items: center;
+    align-content: center;
+    margin-left: 60%;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    flex-grow: 1;
 }
 
 
@@ -121,6 +130,7 @@ a{
     padding: 15px;
     color: whitesmoke;
     text-decoration: none;
+    
 }
 
 a:hover, .dropdown:hover{
