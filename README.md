@@ -1,5 +1,5 @@
 # RiRi on Repeat 
-## API Project one
+## GA: Project 1-Using an API 
 ## Technologies: 
 
 ```bash
