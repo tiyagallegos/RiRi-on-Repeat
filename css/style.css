@@ -33,6 +33,7 @@ h1 {
 
 }
 
+
 div {
     color: whitesmoke;
     padding: 5px;
@@ -85,9 +86,9 @@ input {
   }
 
   #demotext {
-    color: #FFFFFF;
+    color: whitesmoke;
     text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
-    color: #FFFFFF;
+   
     }
 
 ul{
@@ -108,11 +109,28 @@ nav>ul>li{
     position: relative;
 }
 a{
+    display: block;
+    padding: 15px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+a:hover, .dropdown:hover{
     background: #49505a;
 }
+.dropdown{
+    position: relative;
+}
+
 .dropdown-content{
     display: none;
+    position: absolute;
+    min-width: 250px;
+    background: #49505a;
 }
 .dropdown:hover .dropdown-content{
     display: block;
+}
+.dropdown-content, a:hover{
+    background: rgb(21, 21, 24);
 }
