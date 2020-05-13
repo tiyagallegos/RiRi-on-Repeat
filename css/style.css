@@ -42,7 +42,7 @@ div {
     margin: 20px; 
     justify-content: center;
     align-items: center;  
-    flex-grow: 1;   
+      
 }
 
 footer {
@@ -54,8 +54,11 @@ footer {
 #album-cover {
     
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-grow: 1;
+    align-items: left;
+    justify-content: left;
+    background-repeat: no-repeat
+    
 }
 
 

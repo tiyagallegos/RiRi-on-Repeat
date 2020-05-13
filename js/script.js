@@ -77,7 +77,7 @@ function getSongData() {
 			const rating = song.explicit_lyrics ? "Yes" : "No"
 			$explicitLyrics.html(rating)
 	
-			$albumCover.css("backgroundImage", 'url(' + song.album.cover +')')
+			$albumCover.css("backgroundImage", 'url(' + song.album.cover_big +')')
 	
 			$("#music").attr("src", song.preview)
 			$audio[0].load()
