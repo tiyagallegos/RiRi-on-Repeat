@@ -20,18 +20,23 @@ Keypress element added for accessibility: use tab to naviage through elements to
 
 
 ## Images of working app
+
+App in browser:
 ![App prior to search](images/appinbrower.jpeg)
 
 
 
-
+App following searched song:
 ![App following search"](images/search1.jpeg)
 
+
+App following search of unknown song:
 ![App when unknown song searched](images/errorsearch.jpeg)
 
 
 ## Wireframe
 
+Screenshot of wireframe:
 ![App wireframe](images/wireframe.jpeg)
 
 
