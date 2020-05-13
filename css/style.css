@@ -42,10 +42,6 @@ h1 {
     padding: 20px;
 }
 
-div {
-    color: whitesmoke;
-    padding: 5px;
-}
 
 #audio { 
     display: flex;
@@ -62,21 +58,18 @@ footer {
     justify-content: center;
     align-items: center;
     color: whitesmoke;
+    padding: 20px;
    
 }
 #album-cover {
     display: flex;
     flex-direction: column;
-   
     background-repeat: no-repeat;
-    width: 100%;
-    
+    width: 500px;
     justify-content: center;
     align-items: center;
     align-content: center;
-    margin-left: 60%;
-    margin-top: 10px;
-    padding-bottom: 10px;
+    padding: 20px;
     flex-grow: 1;
     height: 500px;
 }
