@@ -22,7 +22,7 @@ Keypress element added for accessibility: use tab to naviage through elements to
 
 ![App following search"](https://imgur.com/a/Y9v3keQ)
 
-![App when unknown song searched](https://imgur.com/a/M99D2eu)
+![App when unknown song searched](<blockquote class="imgur-embed-pub" lang="en" data-id="a/iXUrKgf"><a href="//imgur.com/a/iXUrKgf">Riri app2</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>)
 
 
 ## Wireframe
