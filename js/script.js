@@ -101,7 +101,9 @@ jQuery.ajaxPrefilter(function(options) {
 
 		//Removed all of my console.logs/debugging and titles of sections is that how you clean up the code? or do I leave the pieces labeing sections in? Im not sure. Also am I supposed to take out
 		//my notes at the bottom too(see below) I know you can now go back and view my process through commits but feels like I got the answer to a math problem without showing my work... please advise.
-	 //*** things to finish MONDAY
+		//also fixed my img without changing the margins so now it wont be off center on everyone's screen if the window is a different size. YAY! :)
+		
+		//*** things to finish MONDAY
 	 //1. Where to add .toUperCase()
 	//2.Is there a closest match jQuery function
 	//3. Search closest match 
