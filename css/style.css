@@ -4,7 +4,7 @@
 }
 
 body {
-    margin: 20px;
+    margin: 0px;
     font-size: 1.2em;
     padding: 20px;
     font-family: 'Marcellus SC', serif;
@@ -58,8 +58,6 @@ footer {
     
     display: flex;
     flex-grow: 1;
-    align-items: left;
-    justify-content: left;
     background-repeat: no-repeat
     
 }
@@ -97,4 +95,24 @@ ul{
     margin: 0;
     padding: 0;
    
+}
+
+ul ::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+nav>ul>li{
+    float: left;
+    position: relative;
+}
+a{
+    background: #49505a;
+}
+.dropdown-content{
+    display: none;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
 }
