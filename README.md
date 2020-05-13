@@ -18,19 +18,19 @@ Keypress element added for accessibility: use tab to naviage through elements to
 
 
 ## Images of working app
-![App prior to search](https://imgur.com/a/iXUrKgf)
+![App prior to search](images/appinbrower.jpeg)
 
 
 
 
-![App following search"](https://imgur.com/a/Y9v3keQ)
+![App following search"](images/search1.jpeg)
 
-![App when unknown song searched](<blockquote class="imgur-embed-pub" lang="en" data-id="a/iXUrKgf"><a href="//imgur.com/a/iXUrKgf">Riri app2</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>)
+![App when unknown song searched](images/errorsearch.jpeg)
 
 
 ## Wireframe
 
-![App wireframe](https://imgur.com/a/iR39PMd)
+![App wireframe](images/wireframe.jpeg)
 
 
 ## Stretch Goals/Future Goals:
